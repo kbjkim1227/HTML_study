@@ -6,18 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function process() {
-            var obj = document.myform.text1;
-            alert(obj.value);
-            
+        function addtext(t) {
+            var node = document.createTextNode(t);
+            document.getElementById("target").appendChild(node);
         }
     </script>
 </head>
 <body>
-    <form name="myform">
-        <input type="text" id="target" name="text1">
-        <input type="submit" value="제출"   onclick="process()">
-    </form>
-    
+    <div id="target" onclick="addtext('동적으로 텍스트가 추가됩니다.')"
+        style="font:20px bold;">여기를 클릭하세요</div>
 </body>
 </html>
