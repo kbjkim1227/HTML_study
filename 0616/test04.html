@@ -6,18 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function process() {
-            var obj = document.myform.text1;
-            alert(obj.value);
-            
+        function showAlert(){
+            setTimeout(function() { alert("setTimeOut()을 사용하여 표시")},3000);
         }
     </script>
 </head>
 <body>
-    <form name="myform">
-        <input type="text" id="target" name="text1">
-        <input type="submit" value="제출"   onclick="process()">
-    </form>
-    
+    <p>버튼을 누르면 3초 후에 경고 박스가 화면에 표시됨</p>
+    <button onclick="showAlert()">클릭해보세요</button>
 </body>
 </html>
