@@ -1,0 +1,9 @@
+body{
+    background-color: rgb(24, 116, 236);
+    font-family: 'Sitka Small';
+    color: black
+}
+h2{color: rebeccapurple;}
+
+p.first{color: aqua;}
+p.second{color: brown;}

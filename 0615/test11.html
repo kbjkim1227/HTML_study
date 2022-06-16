@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>패스워드검사</title>
+    <script>
+        function checkpwd() {
+            var s = document.getElementById("pwd").value;
+            if(s.length < 6) {
+                alert("패스워드는 6글자 이상이어야 합니다.");
+            }
+        }
+    </script>
+</head>
+<body>
+    패스워드 : <input type="password" id="pwd" size="10">
+    <button onclick="checkpwd()">검사</button>
+    <!-- 회원가입폼에서 패스워드를 입력할떄 
+        1.두개의 일치 여부 확인
+        2.길이 설정 -->
+</body>
+</html>
