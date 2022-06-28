@@ -1,0 +1,21 @@
+// 상속
+class Chart {
+    constructor(width, height) {
+        this.width = width;
+        this.height = height;
+    }
+    drawLine(){
+        console.log('draw line');
+    }
+}
+class barChart extends Chart {
+    constructor(width, height){
+        super(width, height);
+    }
+    draw(){
+        this.drawLine();
+        console.log(`draw ${this.width} X ${this.height} barChart`);
+    }
+}
+const barChart1 = new barChart(100, 100);
+barChart1.draw();
