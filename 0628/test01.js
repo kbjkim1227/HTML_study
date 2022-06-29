@@ -10,7 +10,7 @@ for (let key in car) {
 console.log("enumerable false");
 Object.defineProperty(car, "name", {
     value: "tesla upgrade",
-    enumerable: false, // false인 경우 for 문이 돌아가지 않음 
+    enumerable: false, // false인 경우 for 문이 돌아가지 않음 Z
 });
 
 for (let key in car) {
